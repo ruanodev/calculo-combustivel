@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Israel Ruano">
+    <link rel="icon" href="../Calculo Combustivel/imagens/fuel_station.png"/>
+    <meta name="decription" content="Calculo para Abastecimento">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <title>Calculo para Abastecimento</title>
+</head>
+<body>
+<div class="center" >
+  <h3 class="titulo">Calculo de Abastecimento</h3>
+<table class="table">
+    <br>
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">Média</th>
+      <th scope="col">R$ / litro</th>
+      <th scope="col">R$</th>
+      <th scope="col">Km</th>
+    </tr>
+  </thead>
+    <tbody>
+      <th scope="row" id="row">Gasolina</th>
+      <td><abbr title="Informe a média do seu carro - Gasolina"><input type="text" name="media_gasolina" id="media_gasolina" size="3""></abbr></td>
+      <td><abbr title="Informe o valor do litro da gasolina"><input type="text" name="valor_litro_gasolina" id="valor_litro_gasolina" size="5"></abbr></td>
+      <td>
+        <select style="font-size: 100%;" name="valor_abastecimento_gasolina" id="valor_abastece_gasolina">
+        <option value="10">10.00</option>
+        <option value="30">30.00</option>
+        <option value="50">50.00</option>
+        <option value="100">100.00</option>
+        <option value="150">150.00</option>
+        <option value="200">200.00</option>
+        <option value="250">250.00</option>
+        </select>
+      </td>
+     <td id="result_gas" height=1 align="center" style="width: 100px;">xxx</td>
+     <br>
+     <!-- <td><button type="button" onclick="resultadoabastecimento()">Calcular</button></td> -->
+    </tbody>    
+    <tbody>
+      <th scope="row" id="roww">Alcool</th>
+      <td><input type="text" name="media_alcool" id="media_alcool" size="3"></td>   
+      <td><input type="text" name="valor_litro_alcool" id="valor_litro_alcool" size="5"></td>
+      <td>
+          <select style="font-size: 100%;" name="valor_abastecimento_alcool" id="valor_abastece_alcool">
+          <option value="10">10.00</option>
+          <option value="30">30.00</option>
+          <option value="50">50.00</option>
+          <option value="100">100.00</option>
+          <option value="150">150.00</option>
+          <option value="200">200.00</option>
+          <option value="250">250.00</option>
+          </select>
+        </td>
+        <td id="result_alco" height=1 align="center" style="width: 100px;">yyy</td>
+     </tbody>
+   </table>
+
+  <div id="button">
+     <br>
+     <button type="button" onclick="resultadoabastecimento()">Calcular</button>
+  </div>
+
+</div>
+   </body>
+</html>
